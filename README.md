@@ -33,7 +33,7 @@ SARIMA (Seasonal ARIMA) extends ARIMA to handle seasonality by adding seasonal p
 - Seasonal differencing (e.g., subtracting current observation from that of the previous year) removes seasonal trends.
 
 The table provided lists several model configurations with different values of AR and MA terms. In all cases, d and D (non-seasonal and seasonal differencing) are assumed to be 0, indicating the input data is already stationary.
-<img src="image/ar_mr_example.png?" width="600" height="300"/>
+<img src="image/ar_mr_example.png?" width="500" height="300"/>
 
 ## Total Number of Iterations
 The total number of model iterations depends on the configuration settings and the selected variable combinations. The process is driven by user-defined inputs and constraints.
