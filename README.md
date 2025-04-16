@@ -5,7 +5,6 @@ Demand forecasting plays a critical role in inventory management, as stock level
 This document aims to provide a comprehensive overview of the technical aspects and feasibility of the Rapid Predict modeling platform. It also explains how the platform delivers highly accurate forecasting results. Rapid Predict utilizes an additive modeling approach that captures the influence of multiple independent factors on the target (dependent) variable. <br/>
 The document outlines the modeling methodology and the necessary preprocessing steps that must be completed prior to model development. The primary objective of this project is to model and forecast the dependent variable using the Box–Jenkins time series framework, with a particular focus on the ARIMA method. This is made possible by leveraging a large and consistent set of historical data.
 
-
 ## ARIMA (p, d, q) and Seasonal ARIMA (SARIMA)
 ARIMA is a widely used statistical model for time series forecasting. It combines three components:
 - AR (autoregressive): uses past values,
@@ -34,7 +33,7 @@ SARIMA (Seasonal ARIMA) extends ARIMA to handle seasonality by adding seasonal p
 - Seasonal differencing (e.g., subtracting current observation from that of the previous year) removes seasonal trends.
 
 The table provided lists several model configurations with different values of AR and MA terms. In all cases, d and D (non-seasonal and seasonal differencing) are assumed to be 0, indicating the input data is already stationary.
-<img src="images/ar_mr_example.png?">
+<img src="images/ar_mr_example.png?" width="600" height="300"/>
 
 ## Total Number of Iterations
 The total number of model iterations depends on the configuration settings and the selected variable combinations. The process is driven by user-defined inputs and constraints.
