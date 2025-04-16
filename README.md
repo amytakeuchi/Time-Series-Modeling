@@ -35,3 +35,22 @@ SARIMA (Seasonal ARIMA) extends ARIMA to handle seasonality by adding seasonal p
 
 The table provided lists several model configurations with different values of AR and MA terms. In all cases, d and D (non-seasonal and seasonal differencing) are assumed to be 0, indicating the input data is already stationary.
 
+## Total Number of Iterations
+The total number of model iterations depends on the configuration settings and the selected variable combinations. The process is driven by user-defined inputs and constraints.
+
+Key Terms:
+- N: Total number of independent variables
+- b: Number of buckets
+- nᵢ: Number of variables in each bucket
+- p: Number of priority variables
+- k: Number of non-priority variables
+- x: Minimum number of variables (x = b + p)
+- min: User-specified minimum number of variables (y ≥ min ≥ x)
+- max: User-specified maximum number of variables (y = x + k and y ≥ max ≥ min)
+
+Iteration Logic:
+Only models that fit within the defined min and max variable limits (including buckets and priority variables) will be executed. The formula calculates the total number of valid combinations (iterations) that meet these constraints.
+
+
+
+
