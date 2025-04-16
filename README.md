@@ -50,6 +50,7 @@ Key Terms:
 
 Iteration Logic:
 Only models that fit within the defined min and max variable limits (including buckets and priority variables) will be executed. The formula calculates the total number of valid combinations (iterations) that meet these constraints.
+
 $$
 13 \cdot \prod n_i \cdot \sum_{i=\text{min}-x}^{y-\text{min}} \binom{k}{i}
 $$
